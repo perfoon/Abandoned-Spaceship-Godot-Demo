@@ -5,7 +5,7 @@ extends CharacterBody3D
 @export var acceleration : float = 0.2
 @export var jump_force : float = 4.0
 @export var gravity : float = 18.0
-@export var sensitivity : float = 0.01
+@export var sensitivity : float = 0.003
 
 @onready var head : Node3D = get_node("Head")
 @onready var camera : Camera3D = get_node("Head/Camera3D")
