@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://six1wvwnxaxk"]
+
+[ext_resource type="Shader" path="res://Materials/RecoloredBase.gdshader" id="1_vnfpk"]
+[ext_resource type="Texture2D" uid="uid://bs0abnv2gichw" path="res://Materials/Utrim_Concrete/utrim_concrete_1_Albedo.png" id="2_37y6f"]
+[ext_resource type="Texture2D" uid="uid://bulydqtkgt4y3" path="res://Materials/Utrim_Concrete/utrim_concrete_1_ORM.png" id="2_67yw7"]
+[ext_resource type="Texture2D" uid="uid://c6r6pnmsu1ugh" path="res://Materials/Misc/Grunge.png" id="4_a8gjo"]
+[ext_resource type="Texture2D" uid="uid://cvxfp8hyt5lwh" path="res://Materials/Utrim_Concrete/utrim_concrete_1_HeightColorMask.png" id="5_sjq6r"]
+[ext_resource type="Texture2D" uid="uid://cn4gwrtcfaxsa" path="res://Materials/Utrim_Concrete/utrim_concrete_1_NormalMap.png" id="6_naops"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_vnfpk")
+shader_parameter/paint_color = Color(0.427451, 0.34902, 0.25098, 1)
+shader_parameter/roughness_scale = 0.5
+shader_parameter/heightmap_scale = 0.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/albedo_tex = ExtResource("2_37y6f")
+shader_parameter/ORM_tex = ExtResource("2_67yw7")
+shader_parameter/height_color_mask_tex = ExtResource("5_sjq6r")
+shader_parameter/normal_tex = ExtResource("6_naops")
+shader_parameter/detail_tex = ExtResource("4_a8gjo")

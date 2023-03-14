@@ -1,0 +1,454 @@
+[gd_scene load_steps=19 format=3 uid="uid://b11dhc2mlx4d4"]
+
+[ext_resource type="PackedScene" uid="uid://cmsqjjs56ulbs" path="res://Scenes/Controllers/FreeLookCamera.tscn" id="1_jx7fx"]
+[ext_resource type="PackedScene" uid="uid://df3v8ucyursk8" path="res://Scenes/Environment/world_environment.tscn" id="2_jfjns"]
+[ext_resource type="LightmapGIData" uid="uid://d1g71c1xqsdyp" path="res://Scenes/Hangar.lmbake" id="2_p7gdw"]
+[ext_resource type="PackedScene" uid="uid://ccjmuj0wg0hgi" path="res://Scenes/Environment/space_craft_hangar.tscn" id="4_i7o5f"]
+[ext_resource type="PackedScene" uid="uid://vg8yuihj5huq" path="res://Models/Objects/ivy_tall.tscn" id="6_wgo3n"]
+[ext_resource type="PackedScene" uid="uid://bcsucihl18y5w" path="res://Models/Objects/ivy_wide.tscn" id="7_2udxq"]
+[ext_resource type="PackedScene" uid="uid://cbjctyhuj0xmc" path="res://Models/Objects/ivy_corner.tscn" id="8_n1cca"]
+[ext_resource type="PackedScene" uid="uid://cs4npuq7uy78y" path="res://Scenes/Environment/objects.tscn" id="9_g5xi8"]
+[ext_resource type="PackedScene" uid="uid://dxdi4u4735wnl" path="res://Models/Objects/fern.tscn" id="9_hiq3b"]
+[ext_resource type="PackedScene" uid="uid://x4wqam8k4bq3" path="res://Scenes/Environment/dust_particles.tscn" id="11_kax4s"]
+[ext_resource type="PackedScene" uid="uid://ddyscklcphe25" path="res://Models/Objects/ivy2_shadowcaster.tscn" id="12_saeyw"]
+[ext_resource type="PackedScene" uid="uid://dncguvff05q2p" path="res://Models/Objects/doorway.tscn" id="13_iiwt1"]
+[ext_resource type="PackedScene" uid="uid://bvs0ds1autal4" path="res://Models/Objects/doorConsole.tscn" id="16_eiia2"]
+[ext_resource type="PackedScene" uid="uid://xf5syq4i2ahe" path="res://Models/Objects/Arcade.tscn" id="17_ddnpo"]
+[ext_resource type="PackedScene" uid="uid://8i3ub1lfxbgi" path="res://Models/Objects/can.tscn" id="21_5xkk4"]
+[ext_resource type="PackedScene" uid="uid://cvi0md4h0tigc" path="res://Scenes/Environment/lights.tscn" id="33_bgp0h"]
+[ext_resource type="PackedScene" uid="uid://bwyjsy0qxpt5j" path="res://Models/Objects/ArcadeBroken.tscn" id="33_oivq7"]
+[ext_resource type="PackedScene" uid="uid://blkf2n5onfgjs" path="res://Models/Objects/hammock.tscn" id="34_ybw4i"]
+
+[node name="Hangar" type="Node3D"]
+
+[node name="FreeLookCamera" parent="." instance=ExtResource("1_jx7fx")]
+transform = Transform3D(0.288313, 0, -0.957536, 0, 1, 0, 0.957536, 0, 0.288313, -9.32659, 4.66961, 5.32302)
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00251019, -0.0179954, -0.034831)
+interior = true
+max_texture_size = 4096
+generate_probes_subdiv = 3
+light_data = ExtResource("2_p7gdw")
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("2_jfjns")]
+
+[node name="ReflectionProbe3" parent="WorldEnvironment" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00711516, 2.45419, -10.4383)
+size = Vector3(3.7, 5, 6)
+origin_offset = Vector3(0, 0.5, 0)
+
+[node name="SpaceCraftHangar" parent="." instance=ExtResource("4_i7o5f")]
+
+[node name="Vegetation" type="Node3D" parent="."]
+
+[node name="Ivy_tall" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 7.71304, 10.717, 3.09917)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall2" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 7.51125, 11.8787, -1.60145)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall3" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 8.79154, 5.94379, 8.64791)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall4" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 8.79154, 12.6228, 8.64791)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall5" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-0.882538, 0.0546233, 0.654326, 0.0600688, 1.09831, -0.0106678, -0.653849, 0.0271726, -0.884162, 7.45236, 4.50922, -1.72984)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall6" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0.290849, 7.43727, 8.64063)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall7" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.288019, 0, -1.06162, 0, 1.1, 0, 1.06162, 0, 0.288019, -1.71363, 5.7377, 9.07471)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall8" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-1.03617, 0, -0.369268, 0, 1.1, 0, 0.369268, 0, -1.03617, 7.48316, 6.12357, -8.62542)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall9" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-1.03617, 0, -0.369268, 0, 1.1, 0, 0.369268, 0, -1.03617, 7.48316, 8.18449, -2.52149)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall15" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-1.03617, 0, -0.369268, 0, 1.1, 0, 0.369268, 0, -1.03617, -27.3312, 10.6974, -0.884677)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall16" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-0.225192, 0, -1.07671, 0, 1.1, 0, 1.07671, 0, -0.225192, -27.3312, 10.6974, 8.58342)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall23" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.09259, 0, 0.127498, 0, 1.1, 0, -0.127498, 0, 1.09259, -28.4116, 13.0404, 1.7151)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall17" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.225192, 9.61651e-08, 1.07671, 1.96869e-08, -1.1, 9.41286e-08, 1.07671, 0, -0.225192, -27.3312, 0.597459, 8.58342)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall18" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.225192, 9.61651e-08, 1.07671, 1.96869e-08, -1.1, 9.41286e-08, 1.07671, 0, -0.225192, -27.3312, 0.597459, -0.956714)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall19" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.225192, 9.61651e-08, 1.07671, 1.96869e-08, -1.1, 9.41286e-08, 1.07671, 0, -0.225192, -28.8521, 0.597459, 0.765592)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall20" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.224768, 0.0848114, 1.07345, 0.01079, -1.0967, 0.08439, 1.07674, -0.00671417, -0.224926, -28.219, 0.597459, 6.80071)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall21" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.08167, -0.00457831, -0.199944, 0.0122373, -1.09614, 0.0913015, -0.199622, -0.0920038, -1.07782, -27.78, 0.597459, 7.58579)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall22" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.08662, -0.0541598, -0.162272, -0.0758158, -1.08781, -0.144614, -0.153354, 0.154038, -1.07831, -27.6256, 0.152892, 0.559672)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall10" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-1.03617, 0, -0.369268, 0, 1.1, 0, 0.369268, 0, -1.03617, -7.66386, 6.57339, -1.32885)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall11" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.02551, -0.0688971, 0.391892, 0.064358, 1.09784, 0.024594, -0.392663, 0, 1.02753, -7.98681, 11.7568, -1.32224)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall12" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(-1.05548, 0.00471576, -0.309757, 0.00298032, 1.09998, 0.00659074, 0.309778, 0.00548471, -1.05547, -8.10493, 9.56334, -10.3547)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall13" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(1.04406, 0.162963, -0.305593, -0.154363, 1.08784, 0.052729, 0.310026, -0.00716357, 1.05538, -8.40446, 6.41555, -1.28311)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_tall14" parent="Vegetation" instance=ExtResource("6_wgo3n")]
+transform = Transform3D(0.354431, -0.0827325, -1.03804, 0.0507045, 1.09659, -0.0700863, 1.0401, -0.0252661, 0.357146, -9.03582, 11.3883, -1.49892)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, 7.97756, 11.9031, 3.78571)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide2" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(0.113645, 0, -1.09411, 0, 1.1, 0, 1.09411, 0, 0.113645, 6.90651, 13.2524, -0.837449)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide3" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.09411, 0, 0.113645, 0, 1.1, 0, -0.113645, 0, 1.09411, 0.973897, 13.2524, -6.44718)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide4" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.09411, 0, -0.113645, 0, 1.1, 0, 0.113645, 0, -1.09411, 0.973897, 13.2524, -16.9086)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide5" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.08152, 0, 0.200799, 0, 1.1, 0, -0.200799, 0, -1.08152, -0.499563, 13.2524, -7.84208)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide6" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.09947, 0, -0.0342641, 0, 1.1, 0, 0.0342641, 0, -1.09947, -0.499563, 13.2524, -10.5575)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide7" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.0662, 0, 0.270582, 0, 1.1, 0, -0.270583, 0, 1.0662, 1.26586, 13.4066, 3.35888)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide8" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-0.0884867, 0, 1.09644, 0, 1.1, 0, -1.09644, 0, -0.0884867, -4.94252, 13.1412, -0.0334256)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide9" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.09644, 0, 0.0884867, 0, 1.1, 0, -0.0884866, 0, 1.09643, -2.4325, 11.128, 8.6617)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide10" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.0996, 0, 0.0295049, 0, 1.1, 0, -0.0295049, 0, -1.0996, -13.8263, 3.5294, 8.93798)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide11" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.0962, 0.0857563, 0.031344, -0.0828422, 1.09293, -0.0929569, -0.0383895, 0.0902755, 1.09562, -23.7535, 3.61948, 8.73655)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide12" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.05182, -0.320904, 0.026151, 0.32051, 1.0521, 0.0191602, -0.0306017, -0.0107014, 1.09952, -17.3941, 8.31101, 8.55447)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide13" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.09135, -0.133946, -0.0316782, -0.134196, 1.09176, 0.00689086, 0.0306018, 0.0107013, -1.09952, -17.2604, 10.6054, 8.55447)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide14" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-1.09135, -0.133946, -0.0316782, -0.134196, 1.09176, 0.00689086, 0.0306018, 0.0107013, -1.09952, -21.4464, 12.3036, -1.0207)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide15" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(1.09135, 0.133946, 0.0316782, 0.0206819, 0.0907071, -1.09606, -0.136078, 1.08804, 0.0874758, -10.8148, 0.390512, 8.15496)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide16" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, 1.55568, 13.115, -0.408963)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide17" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, 7.10388, 11.2532, -8.11384)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide18" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, -8.16756, 4.86676, -7.84022)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide19" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, -0.11983, 1.09345, -5.23793e-09, -1.09345, -0.11983, -4.77963e-08, -7.89338, 4.3107, -14.9771)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide20" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, 7.87706, 10.3444, -0.708343)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide22" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, -0.0518554, 1.09878, -2.26667e-09, -1.09878, -0.0518554, -4.8029e-08, 7.34447, 12.4758, 1.12629)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_wide21" parent="Vegetation" instance=ExtResource("7_2udxq")]
+transform = Transform3D(-4.80825e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.80825e-08, 6.86405, 11.4936, 1.97868)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.62261e-08, -1.09202, 0.132284, -5.15133e-08, -0.132284, -1.09202, 1.1, 9.91346e-09, -5.30907e-08, 7.76537, 13.0588, 5.11634)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner2" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.1, 7.91632e-08, 4.23002e-08, -5.15133e-08, -0.132284, -1.09202, -7.35017e-08, -1.09202, 0.132284, 1.62703, 13.0588, 8.76293)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner3" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, -1.8607e-07, -1.6489e-07, -1.6489e-07, -1.09202, 0.132284, -1.8607e-07, -0.132284, -1.09202, -7.51589, 13.0588, 8.76293)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner4" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, -1.69296e-07, -1.66065e-07, -1.66065e-07, -1.0998, 0.0211939, -1.69296e-07, -0.0211939, -1.0998, -16.1524, 12.2195, 8.8613)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner5" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, 0, 0, 0, -1.1, -1.66095e-07, 0, 1.66095e-07, -1.1, -24.5096, 11.7556, 8.86095)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner6" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, -3.10872e-09, -5.15133e-08, -5.15133e-08, -0.132284, -1.09202, -3.10872e-09, 1.09202, -0.132284, 1.54449, 12.7218, -19.5205)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner7" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.62261e-08, -1.09202, 0.132284, -5.15133e-08, -0.132284, -1.09202, 1.1, 9.91346e-09, -5.30907e-08, 7.15976, 13.0588, -12.0526)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner8" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(7.9939e-08, 1.09202, -0.132283, -5.15131e-08, -0.132283, -1.09202, -1.1, 8.55537e-08, 4.15259e-08, -8.01627, 12.7218, -14.4388)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner9" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.0525e-07, -0.147042, 1.09013, -1.64605e-07, -1.09013, -0.147042, 1.1, -1.77197e-07, 8.23024e-08, -8.01627, 13.0605, -5.39787)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner10" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.09849, 0.057053, 0.00769547, -0.0575696, -1.08863, -0.146841, -1.40863e-07, -0.147042, 1.09013, -12.5752, 12.7991, -1.04321)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner11" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -23.7716, 0.00193715, -1.40046)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner12" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.1, 9.61652e-08, 0, -8.14222e-09, -0.0931361, 1.09605, 9.58197e-08, 1.09605, 0.0931361, -13.8808, 0.0739713, -0.8635)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner13" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(3.06138e-08, 1.099, -0.046984, -4.42767e-09, 0.046984, 1.099, 1.1, -5.96046e-08, 5.58794e-09, -7.82631, 0.158588, -13.823)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner14" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-4.80825e-08, 4.44089e-16, 1.1, -1.03443e-37, 1.1, 4.44089e-16, -1.1, -1.94118e-23, -4.80826e-08, -7.70326, 0.00193727, -6.05461)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner15" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.09653, 0.00372886, 0.0872206, 0.0863663, -0.113982, 1.09067, 0.012735, 1.09407, 0.11333, -2.96879, 0.600029, -19.91)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner16" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.21051e-08, -1.08508, 0.180568, -4.04316e-09, 0.180568, 1.08508, -1.1, -1.84114e-08, -2.97167e-09, 7.36482, -0.200946, -13.265)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner17" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.15221e-08, -1.099, 0.046984, -5.48826e-09, 0.046984, 1.099, -1.1, -1.84114e-08, -2.97167e-09, 7.36482, -0.200946, -8.264)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner18" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.1, 5.96046e-08, 1.86265e-09, -5.48826e-09, 0.0469841, 1.099, 1.19209e-07, -1.099, 0.046984, 1.9006, -0.200946, 8.89101)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner19" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-0.0172011, 1.09987, -4.95805e-08, 9.6165e-08, -4.80826e-08, -1.1, -1.09987, -0.0172012, -9.54015e-08, -11.8228, 12.9854, 4.5982)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner20" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-0.173254, -1.08627, 3.23361e-08, 9.61651e-08, -4.80826e-08, -1.1, 1.08627, -0.173254, 1.02538e-07, 1.23597, 12.9854, -0.136813)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner21" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.07942, -0.206758, -0.0458697, -0.0314275, -0.0792297, 1.09669, -0.20944, 1.07749, 0.0718402, 3.35101, 0.600031, -19.91)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner22" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(0.0314275, 0.0792298, -1.09669, -0.077071, -1.09429, -0.0812643, -1.09685, 0.079162, -0.0257131, 6.5129, 13.3623, 4.77096)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner23" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-1.1, 0, 1.19209e-07, 0, 1.1, 0, -1.19209e-07, 0, -1.1, -23.7716, 0.00193715, 9.02323)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner24" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.49012e-07, 5.32907e-15, 1.1, 9.6165e-08, -1.1, -1.12706e-14, 1.1, 9.6165e-08, -1.49012e-07, -27.9886, 12.2083, 4.21663)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner25" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(-9.96374e-08, 1.09933, -0.0384854, -1.1, -9.61651e-08, 1.00929e-07, 9.75028e-08, 0.0384854, 1.09933, -28.0136, 6.61884, -1.7227)
+skeleton = NodePath("../../..")
+
+[node name="Ivy_corner26" parent="Vegetation" instance=ExtResource("8_n1cca")]
+transform = Transform3D(1.03335e-07, -0.0278926, 1.09965, -1.1, -9.61651e-08, 1.00929e-07, 9.35749e-08, -1.09965, -0.0278926, -28.0352, 8.82342, 9.42763)
+skeleton = NodePath("../../..")
+
+[node name="Fern" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(1.3, 0, 0, 0, 1.26114, 0.315467, 0, -0.315467, 1.26114, 3.36055, 0.20124, 7.27332)
+skeleton = NodePath("../..")
+
+[node name="Fern2" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(-0.648742, -0.0187962, -1.1264, 0, 1.29982, -0.02169, 1.12656, -0.010824, -0.648652, 1.93044, 0.00383121, 7.27332)
+skeleton = NodePath("../..")
+
+[node name="Fern3" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(1.01824, -0.0134845, -0.808091, 0, 1.29982, -0.02169, 0.808203, 0.0169889, 1.0181, 5.52876, 0.00383121, 7.35846)
+skeleton = NodePath("../..")
+
+[node name="Fern4" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(1.29653, -0.00158325, -0.0948799, -7.52698e-10, 1.29982, -0.02169, 0.0948931, 0.0216321, 1.29635, 4.22806, 0.218233, 7.78543)
+skeleton = NodePath("../..")
+
+[node name="Fern5" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(-1.06608, 0.0124126, 0.743854, -9.03634e-10, 1.29982, -0.02169, -0.743957, -0.0177871, -1.06593, 6.208, 0.218233, -4.3562)
+skeleton = NodePath("../..")
+
+[node name="Fern6" parent="Vegetation" instance=ExtResource("9_hiq3b")]
+transform = Transform3D(-0.519163, -0.0161803, -0.969643, -2.88797e-09, 1.09985, -0.018353, 0.969778, -0.00866202, -0.519091, 6.208, 0.130542, -5.37285)
+skeleton = NodePath("../..")
+
+[node name="Objects" parent="." instance=ExtResource("9_g5xi8")]
+
+[node name="Can" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(-0.991411, 0, -0.130786, 0, 1, 0, 0.130786, 0, -0.991411, -3.13423, 0, -13.2814)
+skeleton = NodePath("../..")
+
+[node name="Can2" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.747624, 0, -0.664122, 0, 1, 0, 0.664122, 0, 0.747624, -2.90911, 0, -13.4031)
+skeleton = NodePath("../..")
+
+[node name="Can3" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.780812, 0, -0.624766, 0, 1, 0, 0.624766, 0, 0.780812, -2.74039, 0, -13.3137)
+skeleton = NodePath("../..")
+
+[node name="Can4" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(-0.440112, 0, 0.897943, 0, 1, 0, -0.897943, 0, -0.440112, -2.89079, 0, -13.1712)
+skeleton = NodePath("../..")
+
+[node name="Can5" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.171706, 0, -0.985148, 0, 1, 0, 0.985148, 0, 0.171706, -2.23466, 0, -13.0339)
+skeleton = NodePath("../..")
+
+[node name="Can6" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.760893, 0, 0.648877, 0, 1, 0, -0.648877, 0, 0.760893, -3.19617, 0, -13.5572)
+skeleton = NodePath("../..")
+
+[node name="Can7" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(-0.198085, 0, 0.980185, 0, 1, 0, -0.980185, 0, -0.198085, -1.65744, 0, -13.8366)
+skeleton = NodePath("../..")
+
+[node name="Can8" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44746, 0, -13.8024)
+skeleton = NodePath("../..")
+
+[node name="Can9" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.614203, 0, 0.789148, 0, 1, 0, -0.789148, 0, 0.614203, -1.58222, 0, -13.6922)
+skeleton = NodePath("../..")
+
+[node name="Can10" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(0.664539, 0, 0.747253, 0, 1, 0, -0.747253, 0, 0.664539, -4.53156, 0, -12.9279)
+skeleton = NodePath("../..")
+
+[node name="Can11" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34354, 0.708389, -12.5339)
+skeleton = NodePath("../..")
+
+[node name="Can12" parent="Objects" instance=ExtResource("21_5xkk4")]
+transform = Transform3D(-0.619902, 0, -0.784679, 0, 1, 0, 0.784679, 0, -0.619902, -1.54462, 0.18962, -13.7673)
+skeleton = NodePath("../..")
+
+[node name="DustParticles" parent="." instance=ExtResource("11_kax4s")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.392858, -0.58053, 0.713195, 0.0693911, 0.792053, 0.606496, -0.916977, -0.188777, 0.351448, 11.6121, 4.52298, 5.27435)
+light_color = Color(1, 0.87451, 0.623529, 1)
+light_energy = 0.7
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 20.0
+light_bake_mode = 0
+shadow_enabled = true
+directional_shadow_mode = 0
+
+[node name="Blockers" type="Node3D" parent="."]
+
+[node name="Ivy_ShadowMesh" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.414111, 0, -1.54548, 0, 1.6, 0, 1.54548, 0, 0.414111, 8.73398, 12.4413, 1.77299)
+
+[node name="Ivy_ShadowMesh2" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.414111, 0, -1.54548, 0, 1.6, 0, 1.54548, 0, 0.414111, 8.73398, 11.2394, 0.492696)
+
+[node name="Ivy_ShadowMesh3" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.414111, 0, -1.54548, 0, 1.6, 0, 1.54548, 0, 0.414111, 8.73398, 10.0735, 1.62965)
+
+[node name="Ivy_ShadowMesh6" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.776459, 0, -2.89778, 0, 3, 0, 2.89778, 0, 0.776459, 8.73398, 15.477, 1.44584)
+
+[node name="Ivy_ShadowMesh4" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.414111, 0, -1.54548, 0, 1.6, 0, 1.54548, 0, 0.414111, 8.73398, 12.0151, 8.17938)
+
+[node name="Ivy_ShadowMesh5" parent="Blockers" instance=ExtResource("12_saeyw")]
+transform = Transform3D(0.414111, 0, -1.54548, 0, 1.6, 0, 1.54548, 0, 0.414111, 8.73398, 11.639, 2.78348)
+
+[node name="Doorway" parent="." instance=ExtResource("13_iiwt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5067, 0, 3.67641)
+
+[node name="DoorConsole" parent="." instance=ExtResource("16_eiia2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.923291, 3.84225, -13.2868)
+
+[node name="Arcade" parent="." instance=ExtResource("17_ddnpo")]
+transform = Transform3D(-0.0377325, -0.0681182, 0.996963, -0.0423689, 0.996886, 0.0665093, -0.998389, -0.0397307, -0.0405011, -5.07061, -0.0206956, -11.8211)
+
+[node name="ArcadeBroken" parent="." instance=ExtResource("33_oivq7")]
+transform = Transform3D(0.860125, -0.30094, 0.41185, -0.231806, 0.488613, 0.841144, -0.454369, -0.818958, 0.350509, -5.61479, 0.455646, -13.9699)
+
+[node name="Hammock" parent="." instance=ExtResource("34_ybw4i")]
+transform = Transform3D(0.105188, 0, 0.994452, 0, 1, 0, -0.994452, 0, 0.105188, -4.32956, 1.75846, -14.1021)
+surface_material_override/0 = null
+
+[node name="Lights" parent="." instance=ExtResource("33_bgp0h")]
+visible = true
+
+[editable path="WorldEnvironment"]

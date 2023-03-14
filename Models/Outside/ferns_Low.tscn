@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3lcvmcetlpw1"]
+
+[ext_resource type="ArrayMesh" uid="uid://cx1y8hdgfv83m" path="res://Models/Outside/Meshes/Outside_Fern_Low.res" id="1_ep23g"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="2_tlbnu"]
+
+[node name="Ferns_Low" type="Node3D"]
+
+[node name="Fern" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.190806, 0, 1.28592, 0, 1.3, 0, -1.28592, 0, 0.190806, 1.59799, 0, 0.856937)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.65, 0, -1.12583, 0, 1.3, 0, 1.12583, 0, 0.65, 0, 0, 2.36349)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2557, 0, -0.336465, 0, 1.3, 0, 0.336465, 0, 1.2557, -1.53999, 0.0334983, 1.04808)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.848528, 0, 0.848528, 0, 1.2, 0, -0.848528, 0, 0.848528, -1.31413, 0, -0.513274)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.17892, 0, 0.223932, 0, 1.2, 0, -0.223932, 0, 1.17892, -1.31413, 0, 2.49323)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")
+
+[node name="Fern6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.982434, 0, 0.18661, 0, 1, 0, -0.18661, 0, 0.982434, 0.109154, 0, 0.981135)
+cast_shadow = 2
+gi_lightmap_scale = 1
+mesh = ExtResource("1_ep23g")
+script = ExtResource("2_tlbnu")

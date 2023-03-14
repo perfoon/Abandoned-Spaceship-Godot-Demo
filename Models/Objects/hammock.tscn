@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://blkf2n5onfgjs"]
+
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="2_8igno"]
+[ext_resource type="Material" uid="uid://cl5pyun5ckhr2" path="res://Materials/Misc/Fabric.tres" id="2_dc56m"]
+[ext_resource type="ArrayMesh" uid="uid://rxpwxvbcvyho" path="res://Models/Objects/Meshes/Objects_Hammock.res" id="2_sejxo"]
+
+[node name="Hammock" type="MeshInstance3D"]
+mesh = ExtResource("2_sejxo")
+surface_material_override/0 = ExtResource("2_dc56m")
+script = ExtResource("2_8igno")

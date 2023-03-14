@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3e6iin7rhno7"]
+
+[ext_resource type="Material" uid="uid://cnnemxdoblqc7" path="res://Materials/Vegetation/Vegetation.tres" id="1_aq7og"]
+[ext_resource type="ArrayMesh" uid="uid://5res42ufn80h" path="res://Models/Outside/Meshes/Outside_Tree_Low.res" id="2_wggee"]
+
+[node name="Trees_Low" type="Node3D"]
+
+[node name="Trees_Low" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_aq7og")
+mesh = ExtResource("2_wggee")
+
+[node name="Trees_Low2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 17.7458, 0, 0)
+material_override = ExtResource("1_aq7og")
+mesh = ExtResource("2_wggee")
+
+[node name="Trees_Low3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.527771, 0, -0.849386, 0, 1, 0, 0.849386, 0, -0.527771, 7.31064, 0, 17.5153)
+material_override = ExtResource("1_aq7og")
+mesh = ExtResource("2_wggee")
+
+[node name="Trees_Low4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.999476, 0, 0.0323703, 0, 1, 0, -0.0323703, 0, -0.999476, 6.08654, 0, -11.17)
+material_override = ExtResource("1_aq7og")
+mesh = ExtResource("2_wggee")
+
+[node name="Trees_Low5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.385359, 0, 0.922767, 0, 1, 0, -0.922767, 0, 0.385359, -6.85793, 0, 14.0401)
+material_override = ExtResource("1_aq7og")
+mesh = ExtResource("2_wggee")

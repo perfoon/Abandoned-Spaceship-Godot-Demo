@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://8i3ub1lfxbgi"]
+
+[ext_resource type="Material" uid="uid://six1wvwnxaxk" path="res://Materials/Utrim_Concrete/utrim_concrete_recolored.tres" id="1_hvxio"]
+[ext_resource type="ArrayMesh" uid="uid://q70pa3ji0gmw" path="res://Models/Objects/Meshes/Objects_Can.res" id="2_qo7am"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="3_sdy8v"]
+
+[node name="Can" type="MeshInstance3D"]
+material_override = ExtResource("1_hvxio")
+mesh = ExtResource("2_qo7am")
+script = ExtResource("3_sdy8v")

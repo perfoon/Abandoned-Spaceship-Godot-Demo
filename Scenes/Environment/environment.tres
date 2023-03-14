@@ -1,0 +1,32 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://3mjh4eonnhh3"]
+
+[ext_resource type="Sky" uid="uid://136x3a3hbdgh" path="res://Materials/Sky/Sky.tres" id="1_2jusl"]
+
+[resource]
+background_mode = 2
+sky = ExtResource("1_2jusl")
+tonemap_mode = 1
+ssao_enabled = true
+ssao_radius = 2.0
+ssao_intensity = 7.48
+ssao_power = 0.304595
+ssao_detail = 1.13
+ssil_enabled = true
+ssil_radius = 2.0
+ssil_intensity = 1.4
+sdfgi_energy = 0.1
+glow_enabled = true
+glow_levels/2 = 0.54
+glow_levels/4 = 0.85
+glow_intensity = 3.62
+glow_strength = 0.37
+glow_bloom = 0.02
+glow_blend_mode = 0
+fog_light_color = Color(0.364706, 0.392157, 0.431373, 1)
+fog_light_energy = 0.0
+fog_density = 0.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.06
+volumetric_fog_albedo = Color(0.537255, 0.568627, 0.568627, 1)
+volumetric_fog_ambient_inject = 0.1
+volumetric_fog_temporal_reprojection_amount = 0.85

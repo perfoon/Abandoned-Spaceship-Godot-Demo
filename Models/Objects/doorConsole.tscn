@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvs0ds1autal4"]
+
+[ext_resource type="ArrayMesh" uid="uid://0gyr828o2wxh" path="res://Models/Objects/Meshes/Objects_DoorConsole.res" id="1_31tgl"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="2_cp6nn"]
+
+[node name="DoorConsole" type="MeshInstance3D"]
+mesh = ExtResource("1_31tgl")
+script = ExtResource("2_cp6nn")

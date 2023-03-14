@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxt0tom7neyee"]
+
+[ext_resource type="ArrayMesh" uid="uid://dosplf2nq0yls" path="res://Models/Distant/Meshes/Distant_OutsideDistantGround.res" id="1_l5amp"]
+
+[node name="DistantGround" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+gi_lightmap_scale = 1
+mesh = ExtResource("1_l5amp")

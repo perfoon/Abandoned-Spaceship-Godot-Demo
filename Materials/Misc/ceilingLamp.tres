@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dac2q2nbtg7qy"]
+
+[ext_resource type="Texture2D" uid="uid://c6mvqnayckxsm" path="res://Materials/Misc/TubeLight.png" id="1_a5xvy"]
+[ext_resource type="Texture2D" uid="uid://cob58t83ltrf0" path="res://Materials/Misc/TubeLightBlue.png" id="2_aebjw"]
+
+[resource]
+albedo_color = Color(0.145098, 0.662745, 1, 1)
+albedo_texture = ExtResource("1_a5xvy")
+albedo_texture_force_srgb = true
+emission_enabled = true
+emission = Color(0.266667, 0.623529, 0.741176, 1)
+emission_energy_multiplier = 3.72
+emission_texture = ExtResource("2_aebjw")
+grow_amount = -0.132

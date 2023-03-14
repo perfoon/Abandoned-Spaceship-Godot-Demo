@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddyscklcphe25"]
+
+[ext_resource type="ArrayMesh" uid="uid://0qvqie2vabt" path="res://Models/Objects/Meshes/Objects_Ivy2001.res" id="2_33tot"]
+
+[node name="Ivy_ShadowMesh" type="MeshInstance3D"]
+cast_shadow = 3
+gi_mode = 0
+mesh = ExtResource("2_33tot")

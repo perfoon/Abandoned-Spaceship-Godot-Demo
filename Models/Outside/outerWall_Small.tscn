@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs786eko4vylj"]
+
+[ext_resource type="Material" uid="uid://six1wvwnxaxk" path="res://Materials/Utrim_Concrete/utrim_concrete_recolored.tres" id="1_h614l"]
+[ext_resource type="ArrayMesh" uid="uid://cst2wnfqhxert" path="res://Models/Outside/Meshes/Outside_OuterWall_Small.res" id="2_7j4pb"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2qjwu"]
+data = PackedVector3Array(0, 2.5, 0, 0.931, 5, 0, 0.931, 2.5, 0, 0, 2.5, 0, 0, 5, 0, 0.931, 5, 0, 0, 0, 0, 0.931, 2.5, 0, 0.931, 0, 0, 0, 0, 0, 0, 2.5, 0, 0.931, 2.5, 0, 0.931, 5, 0, 0, 5, -10, 0.931, 5, -10, 0.931, 5, 0, 0, 5, 0, 0, 5, -10, 0.931, 2.5, -10, 0, 5, -10, 0, 2.5, -10, 0.931, 2.5, -10, 0.931, 5, -10, 0, 5, -10, 0, 2.5, -10, 0, 5, 0, 0, 2.5, 0, 0, 2.5, -10, 0, 5, -10, 0, 5, 0, 1, 0.069, -0.069, 1, 2.5, -9.931, 1, 0.069, -9.931, 1, 0.069, -0.069, 1, 2.5, -0.069, 1, 2.5, -9.931, 0, 0, -10, 0, 2.5, 0, 0, 0, 0, 0, 0, -10, 0, 2.5, -10, 0, 2.5, 0, 1, 2.5, -0.069, 1, 4.931, -9.931, 1, 2.5, -9.931, 1, 2.5, -0.069, 1, 4.931, -0.069, 1, 4.931, -9.931, 0.931, 0, 0, 0, 0, -10, 0, 0, 0, 0.931, 0, 0, 0.931, 0, -10, 0, 0, -10, 0.931, 2.5, -10, 1, 4.931, -9.931, 0.931, 5, -10, 0.931, 2.5, -10, 1, 2.5, -9.931, 1, 4.931, -9.931, 0.931, 2.5, 0, 1, 0.069, -0.069, 0.931, 0, 0, 0.931, 2.5, 0, 1, 2.5, -0.069, 1, 0.069, -0.069, 1, 0.069, -9.931, 0.931, 0, 0, 1, 0.069, -0.069, 1, 0.069, -9.931, 0.931, 0, -10, 0.931, 0, 0, 0.931, 5, -10, 1, 4.931, -0.069, 0.931, 5, 0, 0.931, 5, -10, 1, 4.931, -9.931, 1, 4.931, -0.069, 0.931, 0, -10, 1, 2.5, -9.931, 0.931, 2.5, -10, 0.931, 0, -10, 1, 0.069, -9.931, 1, 2.5, -9.931, 0.931, 5, 0, 1, 2.5, -0.069, 0.931, 2.5, 0, 0.931, 5, 0, 1, 4.931, -0.069, 1, 2.5, -0.069, 0.931, 0, -10, 0, 2.5, -10, 0, 0, -10, 0.931, 0, -10, 0.931, 2.5, -10, 0, 2.5, -10)
+
+[node name="OuterWall_Small" type="MeshInstance3D"]
+material_override = ExtResource("1_h614l")
+gi_lightmap_scale = 2
+mesh = ExtResource("2_7j4pb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_2qjwu")

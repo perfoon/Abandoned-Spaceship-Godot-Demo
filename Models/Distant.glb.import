@@ -1,0 +1,75 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://1wsx2amay7qp"
+path="res://.godot/imported/Distant.glb-81f09e627349e045109deef04c70584a.scn"
+
+[deps]
+
+source_file="res://Models/Distant.glb"
+dest_files=["res://.godot/imported/Distant.glb-81f09e627349e045109deef04c70584a.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=2
+meshes/lightmap_texel_size=8.0
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Ground": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Outside/OutsideGround.tres"
+},
+"Vegetation": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Vegetation/Vegetation.tres"
+}
+},
+"meshes": {
+"Distant_Fern_Proxy_Group": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Models/Distant/Meshes/Distant_Fern_Proxy_Group.res"
+},
+"Distant_OutsideDistantGround": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Models/Distant/Meshes/Distant_OutsideDistantGround.res"
+},
+"Distant_Tree_Proxy_Group": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Models/Distant/Meshes/Distant_Tree_Proxy_Group.res"
+}
+}
+}
+gltf/embedded_image_handling=1

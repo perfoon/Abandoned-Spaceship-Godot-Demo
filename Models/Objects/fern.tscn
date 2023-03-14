@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxdi4u4735wnl"]
+
+[ext_resource type="ArrayMesh" uid="uid://cqdl6t5qbecof" path="res://Models/Objects/Meshes/Objects_Fern.res" id="1_e15nj"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="2_rm1vp"]
+
+[node name="Fern" type="MeshInstance3D"]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+cast_shadow = 2
+mesh = ExtResource("1_e15nj")
+script = ExtResource("2_rm1vp")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxemcrtmko30k"]
+
+[ext_resource type="ArrayMesh" uid="uid://t3pma68jnqrq" path="res://Models/Objects/Meshes/Objects_Pipe2.res" id="1_xt0bm"]
+[ext_resource type="Material" uid="uid://six1wvwnxaxk" path="res://Materials/Utrim_Concrete/utrim_concrete_recolored.tres" id="2_pk07s"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="3_0fw45"]
+
+[node name="Pipe2" type="MeshInstance3D"]
+material_override = ExtResource("2_pk07s")
+mesh = ExtResource("1_xt0bm")
+script = ExtResource("3_0fw45")

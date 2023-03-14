@@ -1,0 +1,26 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://dqh7fio1ba0nh"
+path="res://.godot/imported/Hangar.exr-73f9a65383c761ec44c0c282d7e3c01d.ctexarray"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Scenes/Hangar.exr"
+dest_files=["res://.godot/imported/Hangar.exr-73f9a65383c761ec44c0c282d7e3c01d.ctexarray"]
+
+[params]
+
+compress/mode=3
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=1
+slices/vertical=2

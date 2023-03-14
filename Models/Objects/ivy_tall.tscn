@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://vg8yuihj5huq"]
+
+[ext_resource type="ArrayMesh" uid="uid://vs6hobq11mmq" path="res://Models/Objects/Meshes/Objects_Ivy_Tall.res" id="1_4a07q"]
+[ext_resource type="Script" path="res://Scripts/DisableShadows.gd" id="2_trhwy"]
+
+[node name="Ivy_tall" type="MeshInstance3D"]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0, 0)
+cast_shadow = 2
+mesh = ExtResource("1_4a07q")
+script = ExtResource("2_trhwy")

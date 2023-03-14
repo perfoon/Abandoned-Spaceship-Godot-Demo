@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhp5tdut7rfxj"]
+
+[ext_resource type="Material" uid="uid://cnnemxdoblqc7" path="res://Materials/Vegetation/Vegetation.tres" id="1_7t00f"]
+[ext_resource type="ArrayMesh" uid="uid://duc4s6foegd4b" path="res://Models/Outside/Meshes/Outside_Tree.res" id="2_o21v8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b3cpu"]
+radius = 0.969
+height = 33.925
+
+[node name="Tree" type="MeshInstance3D"]
+material_override = ExtResource("1_7t00f")
+lod_bias = 0.001
+gi_lightmap_scale = 1
+mesh = ExtResource("2_o21v8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.123, 0)
+shape = SubResource("CapsuleShape3D_b3cpu")

@@ -1,0 +1,292 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvi0md4h0tigc"]
+
+[ext_resource type="PackedScene" uid="uid://bktes6ef7os5n" path="res://Models/Objects/floorLamp.tscn" id="1_745tg"]
+[ext_resource type="PackedScene" uid="uid://c6oeq13hbctem" path="res://Models/Objects/ceilingLamp.tscn" id="2_6ppw6"]
+[ext_resource type="Material" uid="uid://c1gup63ytbb4r" path="res://Materials/Misc/ceilingLampRed.tres" id="3_jyg2q"]
+
+[node name="Lights" type="Node3D"]
+visible = false
+
+[node name="FloorLamp" parent="." instance=ExtResource("1_745tg")]
+transform = Transform3D(-0.86544, 0, -0.501012, 0, 1, 0, 0.501012, 0, -0.86544, -2.6655, 0, -12.0847)
+cast_shadow = 0
+skeleton = NodePath("../..")
+
+[node name="OmniFloor" type="OmniLight3D" parent="FloorLamp"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, -0.00853157, 0.991366, 0.0105491)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor2" type="OmniLight3D" parent="FloorLamp"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, -0.505594, 0.991366, -0.307312)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor3" type="OmniLight3D" parent="FloorLamp"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, 0.274916, 0.991366, 0.682781)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor4" type="OmniLight3D" parent="FloorLamp"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, 0.691381, 0.991366, 0.0315213)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="FloorLamp2" parent="." instance=ExtResource("1_745tg")]
+transform = Transform3D(-0.842471, 0, -0.538741, 0, 1, 0, 0.538741, 0, -0.842471, -3.93194, 0, -0.988967)
+cast_shadow = 0
+skeleton = NodePath("../..")
+
+[node name="OmniFloor" type="OmniLight3D" parent="FloorLamp2"]
+transform = Transform3D(-0.830074, -0.385421, -0.403025, -0.0998015, -0.608373, 0.787351, -0.548651, 0.693782, 0.466529, -0.00853181, 0.991366, 0.0105488)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor2" type="OmniLight3D" parent="FloorLamp2"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, -0.505594, 0.991366, -0.307312)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor3" type="OmniLight3D" parent="FloorLamp2"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, 0.274916, 0.991366, 0.682781)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="OmniFloor4" type="OmniLight3D" parent="FloorLamp2"]
+transform = Transform3D(-0.830074, -0.385421, -0.403024, -0.0998015, -0.608373, 0.787352, -0.548651, 0.693782, 0.466529, 0.691381, 0.991366, 0.0315213)
+light_color = Color(1, 0.588235, 0.113725, 1)
+light_energy = 2.0
+light_indirect_energy = 1.924
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4096.0
+omni_attenuation = 1.7411
+
+[node name="DoorLamp" parent="." instance=ExtResource("2_6ppw6")]
+transform = Transform3D(0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0, 0, 1, -28.7838, 3.92169, 3.78221)
+skeleton = NodePath("../..")
+surface_material_override/1 = ExtResource("3_jyg2q")
+
+[node name="OmniDoor" type="OmniLight3D" parent="DoorLamp"]
+transform = Transform3D(0.161096, -0.600341, 0.783351, -0.986824, -0.110067, 0.118588, 0.0150273, -0.792134, -0.610163, -0.0156546, -0.813669, 0.47248)
+light_color = Color(1, 0.392157, 0.32549, 1)
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.989
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_blur = 2.0
+omni_range = 10.0
+omni_attenuation = 2.07053
+
+[node name="OmniDoor3" type="OmniLight3D" parent="DoorLamp"]
+transform = Transform3D(0.161096, -0.600341, 0.783351, -0.986824, -0.110067, 0.118588, 0.0150273, -0.792134, -0.610163, -0.0156546, -0.813669, -0.0651155)
+light_color = Color(1, 0.392157, 0.32549, 1)
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.989
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_blur = 2.0
+omni_range = 10.0
+omni_attenuation = 2.07053
+
+[node name="OmniDoor2" type="OmniLight3D" parent="DoorLamp"]
+transform = Transform3D(0.161096, -0.600341, 0.783351, -0.986824, -0.110067, 0.118588, 0.0150273, -0.792134, -0.610163, -0.0156546, -0.813669, -0.575564)
+light_color = Color(1, 0.392157, 0.32549, 1)
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.989
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_blur = 2.0
+omni_range = 10.0
+omni_attenuation = 2.07053
+
+[node name="OmniDoor4" type="OmniLight3D" parent="DoorLamp"]
+transform = Transform3D(0.161096, -0.600342, 0.78335, -0.986824, -0.110067, 0.118588, 0.0150273, -0.792133, -0.610163, -0.0535612, -0.641205, -0.0651155)
+light_color = Color(1, 0.392157, 0.32549, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 6.028
+light_size = 0.989
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_blur = 2.0
+omni_range = 7.172
+
+[node name="OmniDoor5" type="OmniLight3D" parent="DoorLamp"]
+transform = Transform3D(0.161096, -0.600342, 0.78335, -0.986824, -0.110067, 0.118588, 0.0150273, -0.792133, -0.610163, -0.163387, -2.55936, -0.0651155)
+light_color = Color(1, 0.392157, 0.32549, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.989
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_blur = 2.0
+omni_range = 7.172
+
+[node name="CeilingLamp" parent="." instance=ExtResource("2_6ppw6")]
+transform = Transform3D(0.5, -0.866025, 0, 0.866025, 0.5, 0, 0, 0, 1, -1.79038, 4.48698, -10.2005)
+skeleton = NodePath("../..")
+
+[node name="OmniCeiling5" type="OmniLight3D" parent="CeilingLamp"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, 0.0527124, -0.605987, -0.0154018)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 10.743
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 3.606
+omni_attenuation = 1.31951
+
+[node name="OmniCeiling6" type="OmniLight3D" parent="CeilingLamp"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, 0.0527124, -0.605987, 0.600303)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 0.0
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 8.973
+omni_attenuation = 2.0
+
+[node name="OmniCeiling7" type="OmniLight3D" parent="CeilingLamp"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, 0.0527124, -0.605987, -0.677544)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 0.0
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 8.973
+omni_attenuation = 2.07053
+
+[node name="CeilingLamp2" parent="." instance=ExtResource("2_6ppw6")]
+transform = Transform3D(0.5, 0.866025, 0, -0.866025, 0.5, 0, 0, 0, 1, 1.82219, 4.48005, -10.2005)
+skeleton = NodePath("../..")
+
+[node name="OmniCeiling2" type="OmniLight3D" parent="CeilingLamp2"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, -0.039824, -0.605987, -0.0154018)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 10.743
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 3.606
+omni_attenuation = 1.31951
+
+[node name="OmniCeiling3" type="OmniLight3D" parent="CeilingLamp2"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, -0.039824, -0.605987, 0.600303)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 0.0
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 8.973
+omni_attenuation = 2.0
+
+[node name="OmniCeiling4" type="OmniLight3D" parent="CeilingLamp2"]
+transform = Transform3D(0.994894, -0.0490635, 0.0881985, -0.0998017, -0.608373, 0.787352, 0.0150273, -0.792134, -0.610163, -0.039824, -0.605987, -0.677544)
+light_color = Color(0.682353, 0.870588, 1, 1)
+light_energy = 0.8
+light_volumetric_fog_energy = 0.0
+light_size = 0.654
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 8.973
+omni_attenuation = 2.07053
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.354601, 0.935018, 0, -0.935018, 0.354601, -5.37632, 12.5135, -9.98397)
+light_color = Color(0.482353, 0.823529, 1, 1)
+light_energy = 1.062
+light_volumetric_fog_energy = 16.0
+light_bake_mode = 1
+spot_range = 34.251
+spot_angle = 30.0
+spot_angle_attenuation = 1.7411
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.354601, 0.935018, 0, -0.935018, 0.354601, 4.05121, 12.5135, -9.98397)
+light_color = Color(0.482353, 0.823529, 1, 1)
+light_energy = 1.062
+light_volumetric_fog_energy = 16.0
+light_bake_mode = 1
+spot_range = 34.251
+spot_angle = 30.0
+spot_angle_attenuation = 1.7411
+
+[node name="SunSpot" type="SpotLight3D" parent="."]
+transform = Transform3D(0.351634, -0.842606, 0.407882, 0.209378, 0.495459, 0.843019, -0.912422, -0.211033, 0.350644, 39.413, 37.607, 23.481)
+light_color = Color(0.980392, 1, 0.901961, 1)
+light_energy = 1000.0
+light_indirect_energy = 100.0
+light_volumetric_fog_energy = 0.0
+light_size = 2.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+spot_range = 4096.0
+spot_angle = 40.29
+spot_angle_attenuation = 0.000122069

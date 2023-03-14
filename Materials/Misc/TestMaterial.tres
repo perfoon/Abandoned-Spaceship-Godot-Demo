@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ctmd3ywcdotuy"]
+
+[ext_resource type="Texture2D" uid="uid://c6r6pnmsu1ugh" path="res://Materials/Misc/Grunge.png" id="1_f5f5b"]
+
+[resource]
+detail_enabled = true
+detail_albedo = ExtResource("1_f5f5b")

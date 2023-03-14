@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6oeq13hbctem"]
+
+[ext_resource type="Material" uid="uid://dac2q2nbtg7qy" path="res://Materials/Misc/ceilingLamp.tres" id="2_k3m84"]
+[ext_resource type="ArrayMesh" uid="uid://ckfa4lg0yh4gs" path="res://Models/Objects/Meshes/Objects_CeilingLamp.res" id="2_w5gum"]
+
+[node name="CeilingLamp" type="MeshInstance3D"]
+mesh = ExtResource("2_w5gum")
+surface_material_override/1 = ExtResource("2_k3m84")

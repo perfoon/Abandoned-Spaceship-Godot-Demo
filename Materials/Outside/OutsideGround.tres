@@ -1,0 +1,39 @@
+[gd_resource type="ShaderMaterial" load_steps=14 format=3 uid="uid://d1r8knfnhwjje"]
+
+[ext_resource type="Shader" path="res://Materials/GroundBase.gdshader" id="1_3h4u1"]
+[ext_resource type="Texture2D" uid="uid://cdwv6dxlm6bt4" path="res://Materials/Outside/forest_leaves_03_diff_1k.jpg" id="1_j7c7c"]
+[ext_resource type="Texture2D" uid="uid://bn0x5hv24mhnk" path="res://Materials/Outside/forrest_sand_01_diff_1k.jpg" id="2_1v2rq"]
+[ext_resource type="Texture2D" uid="uid://bg0rpdse2mp6n" path="res://Materials/Outside/forest_leaves_03_disp_1k.png" id="2_3oiwq"]
+[ext_resource type="Texture2D" uid="uid://cwbnvs35pncj0" path="res://Materials/Outside/brown_mud_leaves_01_diff_1k.jpg" id="2_fp6om"]
+[ext_resource type="Texture2D" uid="uid://xqngbhpqteux" path="res://Materials/Outside/forest_leaves_03_arm_1k.jpg" id="3_nxuuv"]
+[ext_resource type="Texture2D" uid="uid://b2yfn5flogn85" path="res://Materials/Outside/forest_leaves_03_nor_gl_1k.jpg" id="4_l3nco"]
+[ext_resource type="Texture2D" uid="uid://ial6q1s71hjq" path="res://Materials/Outside/brown_mud_leaves_01_arm_1k.jpg" id="5_pioab"]
+[ext_resource type="Texture2D" uid="uid://mw8pa7mvhk3a" path="res://Materials/Outside/forrest_sand_01_disp_1k.png" id="5_rqpsh"]
+[ext_resource type="Texture2D" uid="uid://bub4rqkvkdy30" path="res://Materials/Outside/brown_mud_leaves_01_disp_1k.png" id="7_n5dh2"]
+[ext_resource type="Texture2D" uid="uid://mpsi1bnseorj" path="res://Materials/Outside/forrest_sand_01_nor_gl_1k.png" id="8_chypt"]
+[ext_resource type="Texture2D" uid="uid://dqqbqypyul5b" path="res://Materials/Outside/brown_mud_leaves_01_nor_gl_1k.png" id="10_mdg0p"]
+[ext_resource type="Texture2D" uid="uid://bq2mrara784de" path="res://Materials/Outside/forrest_sand_01_arm_1k.jpg" id="11_rygum"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3h4u1")
+shader_parameter/uv_scale = 10.0
+shader_parameter/heightmap_scale = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/blend_min = -0.016
+shader_parameter/blend_max = 1.053
+shader_parameter/color_red = Color(1, 1, 1, 1)
+shader_parameter/color_green = Color(0.890196, 0.878431, 0.8, 1)
+shader_parameter/color_blue = Color(0.698039, 0.631373, 0.517647, 1)
+shader_parameter/albedo_red = ExtResource("2_fp6om")
+shader_parameter/heightmap_red = ExtResource("7_n5dh2")
+shader_parameter/orm_red = ExtResource("5_pioab")
+shader_parameter/normal_red = ExtResource("10_mdg0p")
+shader_parameter/albedo_green = ExtResource("1_j7c7c")
+shader_parameter/heightmap_green = ExtResource("2_3oiwq")
+shader_parameter/orm_green = ExtResource("3_nxuuv")
+shader_parameter/normal_green = ExtResource("4_l3nco")
+shader_parameter/albedo_blue = ExtResource("2_1v2rq")
+shader_parameter/heightmap_blue = ExtResource("5_rqpsh")
+shader_parameter/orm_blue = ExtResource("11_rygum")
+shader_parameter/normal_blue = ExtResource("8_chypt")

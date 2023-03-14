@@ -1,0 +1,498 @@
+[gd_scene load_steps=17 format=3 uid="uid://cs4npuq7uy78y"]
+
+[ext_resource type="PackedScene" uid="uid://c8pitogkf3rf7" path="res://Models/Objects/barrel.tscn" id="1_8ji7k"]
+[ext_resource type="PackedScene" uid="uid://s42y6845bo4" path="res://Models/Objects/brokenChunks.tscn" id="2_q51ti"]
+[ext_resource type="PackedScene" uid="uid://bgrj46hog6dp4" path="res://Models/Objects/brokenPillar.tscn" id="3_8rayr"]
+[ext_resource type="PackedScene" uid="uid://dd5dk8amfypyq" path="res://Models/Objects/brokenSlabs.tscn" id="4_cow6a"]
+[ext_resource type="PackedScene" uid="uid://ccuk6u60thc6l" path="res://Models/Objects/cinderBlocks.tscn" id="5_hichv"]
+[ext_resource type="PackedScene" uid="uid://c30iapbhlktyw" path="res://Models/Objects/container.tscn" id="6_iv55e"]
+[ext_resource type="PackedScene" uid="uid://c8g6cl7du3oa1" path="res://Models/Objects/largeContainer.tscn" id="7_idnwy"]
+[ext_resource type="PackedScene" uid="uid://cyvtfmnor5opl" path="res://Models/Objects/pipe1.tscn" id="8_hntru"]
+[ext_resource type="PackedScene" uid="uid://bxemcrtmko30k" path="res://Models/Objects/pipe2.tscn" id="9_fmnj4"]
+[ext_resource type="PackedScene" uid="uid://c407rfpoiw6r3" path="res://Models/Objects/pipe3.tscn" id="10_g7efc"]
+[ext_resource type="PackedScene" uid="uid://8msu1j58d4dq" path="res://Models/Objects/rubble_large.tscn" id="11_o2pud"]
+[ext_resource type="PackedScene" uid="uid://d1f2uwn3pxm25" path="res://Models/Objects/rubble_medium.tscn" id="12_dy6fh"]
+[ext_resource type="PackedScene" uid="uid://bp7v85ttf5ohq" path="res://Models/Objects/rubble_pile.tscn" id="13_aep6x"]
+[ext_resource type="PackedScene" uid="uid://dieusm5am35yt" path="res://Models/Objects/rubble_small.tscn" id="14_42thw"]
+[ext_resource type="PackedScene" uid="uid://baxa16186w0om" path="res://Models/Objects/rubble_small_wide.tscn" id="15_1rpos"]
+[ext_resource type="PackedScene" uid="uid://cfhbpfbcg7p3v" path="res://Models/Objects/steelPiece2.tscn" id="16_p7nyv"]
+
+[node name="Objects" type="Node3D"]
+
+[node name="Barrel" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.10758, 0, -5.56557)
+skeleton = NodePath("../../..")
+
+[node name="Barrel2" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.94885, 0, -5.56557)
+skeleton = NodePath("../../..")
+
+[node name="Barrel3" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6544, 0, -4.84383)
+skeleton = NodePath("../../..")
+
+[node name="Barrel9" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76528, 0, -4.17233)
+skeleton = NodePath("../../..")
+
+[node name="Barrel10" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19336, 0, -11.2996)
+skeleton = NodePath("../../..")
+
+[node name="Barrel11" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74018, 0, -10.5778)
+skeleton = NodePath("../../..")
+
+[node name="Barrel12" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.85107, 0, -9.90635)
+skeleton = NodePath("../../..")
+
+[node name="Barrel13" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(0.897805, 0, 0.440394, 0, 1, 0, -0.440394, 0, 0.897805, 0.786628, 0, -11.0507)
+skeleton = NodePath("../../..")
+
+[node name="Barrel14" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(0.897805, 0, 0.440394, 0, 1, 0, -0.440394, 0, 0.897805, 1.59542, 0, -10.6435)
+skeleton = NodePath("../../..")
+
+[node name="Barrel15" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(0.897805, 0, 0.440394, 0, 1, 0, -0.440394, 0, 0.897805, 1.99069, 0, -10.0895)
+skeleton = NodePath("../../..")
+
+[node name="BrokenChunks" parent="." instance=ExtResource("2_q51ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92312, 0.00736022, -13.7732)
+skeleton = NodePath("../../..")
+
+[node name="BrokenPillar" parent="." instance=ExtResource("3_8rayr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.04017, 0.00736022, -10.5889)
+skeleton = NodePath("../../..")
+
+[node name="BrokenSlabs" parent="." instance=ExtResource("4_cow6a")]
+transform = Transform3D(0.972343, 0.184101, 0.143723, -0.106313, 0.89679, -0.429494, -0.207959, 0.402336, 0.89156, 6.59905, 0.501692, -10.4363)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.39936, 0.00736022, -4.74536)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks2" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5839, 0.00736022, -4.75327)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks6" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(0.95139, 0, 0.307988, 0, 1, 0, -0.307988, 0, 0.95139, 0.890427, 0.00736022, 5.37374)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks3" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(-0.729864, 0, 0.683592, 0, 1, 0, -0.683592, 0, -0.729864, -6.5894, 0.00822783, -6.03057)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks4" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(-0.992559, 0, 0.121765, 0, 1, 0, -0.121765, 0, -0.992559, -0.214515, 0.00822783, 8.4311)
+skeleton = NodePath("../../..")
+
+[node name="CinderBlocks5" parent="." instance=ExtResource("5_hichv")]
+transform = Transform3D(-0.901908, 0, 0.431928, 0, 1, 0, -0.431928, 0, -0.901908, -24.5762, 0.00822783, 0.350733)
+skeleton = NodePath("../../..")
+
+[node name="container" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.988565, 0, -0.150795, 0, 1, 0, 0.150795, 0, 0.988565, 3.19713, 0.357507, -2.99381)
+skeleton = NodePath("../../..")
+
+[node name="container2" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.921823, 0, 0.387612, 0, 1, 0, -0.387612, 0, 0.921823, 3.67221, 0.357507, -2.07704)
+skeleton = NodePath("../../..")
+
+[node name="container3" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.999735, 0, -0.0230363, 0, 1, 0, 0.0230363, 0, 0.999735, 3.67221, 0.357507, -3.75949)
+skeleton = NodePath("../../..")
+
+[node name="container4" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.90582, 0, 0.423662, 0, 1, 0, -0.423662, 0, 0.90582, 3.42431, 1.07526, -3.33902)
+skeleton = NodePath("../../..")
+
+[node name="container5" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.988565, 0, -0.150795, 0, 1, 0, 0.150795, 0, 0.988565, -1.6104, 0.357507, -15.2307)
+skeleton = NodePath("../../..")
+
+[node name="container8" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.560581, 0, -0.8281, 0, 1, 0, 0.8281, 0, 0.560581, -1.19506, 1.06822, -14.7179)
+skeleton = NodePath("../../..")
+
+[node name="container5" parent="container8" instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.988565, 0, -0.150795, 0, 1, 0, 0.150795, 0, 0.988565, 2.28977, -0.722039, -2.22811)
+skeleton = NodePath("../..")
+
+[node name="container6" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.921823, 0, 0.387612, 0, 1, 0, -0.387612, 0, 0.921823, -0.8609, 0.357507, -12.6574)
+skeleton = NodePath("../../..")
+
+[node name="container7" parent="." instance=ExtResource("6_iv55e")]
+transform = Transform3D(0.999735, 0, -0.0230363, 0, 1, 0, 0.0230363, 0, 0.999735, -0.8609, 0.357507, -14.3398)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.3564, 0.00736022, -2.48976)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer2" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, 6.3564, 0.00736022, -8.91438)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer6" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, 2.70017, 0.00736022, -12.4691)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer7" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, 1.66363, 0.00736022, -12.4691)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer3" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.0409514, 0, 0.999161, 0, 1, 0, -0.999161, 0, -0.0409514, 6.70052, 0.00736022, -6.90597)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer4" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.166752, 0, 0.985999, 0, 1, 0, -0.985999, 0, -0.166752, 6.63723, 1.00523, -7.86102)
+skeleton = NodePath("../../..")
+
+[node name="LargeContainer5" parent="." instance=ExtResource("7_idnwy")]
+transform = Transform3D(-0.166751, 4.52512e-09, 0.985999, 0.433239, 0.898296, 0.073269, -0.885719, 0.43939, -0.149792, 6.63723, 0.870373, -10.5934)
+skeleton = NodePath("../../..")
+
+[node name="Pipe1" parent="." instance=ExtResource("8_hntru")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -8.0057, 0.00736022, -2.88773)
+skeleton = NodePath("../../..")
+
+[node name="Pipe2" parent="Pipe1" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 1.73857, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe3" parent="Pipe1" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4.18639, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe4" parent="Pipe1" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 6.59383, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe2" parent="." instance=ExtResource("8_hntru")]
+transform = Transform3D(-2.5, 0, -3.77489e-07, 0, 2.5, 0, 3.77489e-07, 0, -2.5, -7.54682, -2.98018, 8.82322)
+skeleton = NodePath("../../..")
+
+[node name="Pipe2" parent="Pipe2" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 1.73857, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe3" parent="Pipe2" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4.18639, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe4" parent="Pipe2" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 6.59383, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe3" parent="." instance=ExtResource("8_hntru")]
+transform = Transform3D(-2.5, 0, -3.77489e-07, 0, 2.5, 0, 3.77489e-07, 0, -2.5, -7.08698, -2.42085, 8.82322)
+skeleton = NodePath("../../..")
+
+[node name="Pipe2" parent="Pipe3" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 1.73857, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe3" parent="Pipe3" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4.18639, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe4" parent="Pipe3" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 6.59383, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe4" parent="." instance=ExtResource("8_hntru")]
+transform = Transform3D(-2.5, 0, -3.77489e-07, 0, 2.5, 0, 3.77489e-07, 0, -2.5, -10.5606, 3.92119, -1.24427)
+skeleton = NodePath("../../..")
+
+[node name="Pipe2" parent="Pipe4" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 1.73857, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe3" parent="Pipe4" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4.18639, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe4" parent="Pipe4" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 6.59383, 2.49858, -0.00194955)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe5" parent="Pipe4" instance=ExtResource("9_fmnj4")]
+transform = Transform3D(-1.50996e-07, -8.74228e-08, 1, -1.07284e-07, -1, -8.74228e-08, 1, -1.07284e-07, 1.50996e-07, 0.00104141, 0.00174248, -0.00195056)
+skeleton = NodePath("../../../..")
+
+[node name="Pipe5" parent="." instance=ExtResource("10_g7efc")]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -2.62658, 0.0801246, 8.8203)
+skeleton = NodePath("../../..")
+
+[node name="Pipe6" parent="." instance=ExtResource("10_g7efc")]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -2.62658, 7.19813, 8.8203)
+skeleton = NodePath("../../..")
+
+[node name="Pipe7" parent="." instance=ExtResource("10_g7efc")]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 0.501305, -0.522041, 8.8203)
+skeleton = NodePath("../../..")
+
+[node name="Pipe8" parent="." instance=ExtResource("10_g7efc")]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 0.501305, 6.61255, 8.8203)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(-0.981336, 0, -0.192299, 0, 1, 0, 0.192299, 0, -0.981336, -6.77885, 0.0262873, -1.42092)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large7" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(-0.981336, 0, -0.192299, 0, 1, 0, 0.192299, 0, -0.981336, -8.10502, 0.0262873, -2.96009)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8456, 0.00736022, -9.11221)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium7" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(0.909831, 0, -0.414979, 0, 1, 0, 0.414979, 0, 0.909831, -4.18709, 0.00736022, -4.89697)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05481, 0.00736022, -8.38562)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Small" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.43988, 0.00736022, -11.3813)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small2" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.70104, 0.00736022, -3.4519)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55563, 0.00736022, -4.57382)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide2" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86328, 0.00736022, -5.83108)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide3" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(-0.215179, 0, 0.976575, 0, 1, 0, -0.976575, 0, -0.215179, 4.28374, 0.00736022, 0.178227)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Pile2" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.44112, 0.00736022, -1.37192)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium2" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50013, 0.00736022, -2.94493)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Small3" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.05853, 0.00736022, -0.354815)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide4" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.877175, 0.00736022, 7.09595)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small4" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(0.338672, 0, -0.940904, 0, 1, 0, 0.940904, 0, 0.338672, -5.3092, 0.00736022, 0.57432)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small9" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(0.338672, 0, -0.940904, 0, 1, 0, 0.940904, 0, 0.338672, -5.3092, 0.00736022, -3.13702)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small8" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(0.338672, 0, -0.940904, 0, 1, 0, 0.940904, 0, 0.338672, -3.3602, 0.00736022, -2.32255)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide5" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5297, 0.00736022, -2.78011)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide6" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(0.12694, 0, -0.996716, 0, 1.00477, 0, 0.996716, 0, 0.12694, 4.34857, 0.00736022, 5.74516)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide7" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(-0.971949, 0, -0.235193, 0, 1, 0, 0.235193, 0, -0.971949, -4.56783, 0.00736022, 5.82443)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide8" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(0.762036, 0, -0.647535, 0, 1, 0, 0.647535, 0, 0.762036, -0.612443, 0.00736022, 5.13045)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Pile3" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(-0.338672, 0, 0.940904, 0, 1, 0, -0.940904, 0, -0.338672, -7.05305, 0.00736022, -8.56169)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium3" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.95732, 0.00736022, -7.98318)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large2" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96769, 0.00736022, -9.96729)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile4" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.57435, 0.00736022, -12.1701)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile5" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(0.407562, 0, -2.97219, 0, 3, 0, 2.97219, 0, 0.407562, -6.57435, 0.00736022, -16.875)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large3" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.10616, 0.00736022, -16.447)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Small5" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.453541, 0.00736022, -17.9112)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small_Wide9" parent="." instance=ExtResource("15_1rpos")]
+transform = Transform3D(0.535178, 0, -0.844739, 0, 1, 0, 0.844739, 0, 0.535178, -9.21179, 0.00736022, 4.68799)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Small6" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7307, 0.00736022, 2.43627)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Pile6" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -13.8661, 0.00736022, 7.66589)
+skeleton = NodePath("../../..")
+
+[node name="BrokenSlabs2" parent="." instance=ExtResource("4_cow6a")]
+transform = Transform3D(0.669648, 0, -1.34223, 0, 1.5, 0, 1.34223, 0, 0.669648, -11.5438, 0.00736022, 0.44404)
+skeleton = NodePath("../../..")
+
+[node name="BrokenChunks2" parent="." instance=ExtResource("2_q51ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5329, 0.00736022, 8.10339)
+skeleton = NodePath("../../..")
+
+[node name="BrokenChunks3" parent="." instance=ExtResource("2_q51ti")]
+transform = Transform3D(0.984442, -3.59835e-09, 0.17571, 7.45058e-09, -1, -2.98023e-08, 0.17571, 8.9407e-08, -0.984442, -3.19905, 0.304083, 6.27448)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium4" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4102, 0.00736022, 6.78195)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large4" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6983, 0.00736022, 5.52376)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Small7" parent="." instance=ExtResource("14_42thw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0899, 0.00736022, 4.71743)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="Rubble_Medium5" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(0.0830691, 0, -0.996544, 0, 1, 0, 0.996544, 0, 0.0830691, -9.10496, 0.00736022, 7.66291)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile7" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(0.278438, 0, -0.960454, 0, 1, 0, 0.960454, 0, 0.278438, -6.65618, 0.00736022, 8.04807)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile8" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(-0.881694, 0, -1.08748, 0, 1.4, 0, 1.08748, 0, -0.881694, -4.68547, 0.00736022, 8.64611)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Pile9" parent="." instance=ExtResource("13_aep6x")]
+transform = Transform3D(1.11821, 0, -0.842385, 0, 1.4, 0, 0.842385, 0, 1.11821, -11.8924, -0.112816, 8.64611)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Medium6" parent="." instance=ExtResource("12_dy6fh")]
+transform = Transform3D(0.72697, 0, 0.686669, 0, 1, 0, -0.686669, 0, 0.72697, -4.63652, 0.00736022, 7.22828)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large5" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -15.3761, 0.00736022, 0.0272083)
+skeleton = NodePath("../../..")
+
+[node name="Rubble_Large6" parent="." instance=ExtResource("11_o2pud")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.07875, 0.00736022, 7.58434)
+skeleton = NodePath("../../..")
+
+[node name="Barrel4" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26194, 0.00736022, -10.0293)
+skeleton = NodePath("../../..")
+
+[node name="Barrel5" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.96344, 0.00736022, -10.4117)
+skeleton = NodePath("../../..")
+
+[node name="Barrel6" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39968, 0.00736022, -10.8766)
+skeleton = NodePath("../../..")
+
+[node name="Barrel7" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39968, 0.97127, -10.8297)
+skeleton = NodePath("../../..")
+
+[node name="Barrel8" parent="." instance=ExtResource("1_8ji7k")]
+transform = Transform3D(0.64897, 0.760814, -3.32562e-08, 0, -4.37114e-08, -1, -0.760814, 0.64897, -2.83674e-08, -3.22262, 0.350388, -9.73607)
+skeleton = NodePath("../../..")
+
+[node name="SteelPiece2" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(0.226957, 0.0411715, -1.98665, 0.21167, 1.98769, 0.0653743, 1.97578, -0.217676, 0.221203, 7.39454, 0.132215, -1.56602)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece3" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(1.29106, 1.44545, 0.493787, -1.34142, 1.38217, -0.538714, -0.730591, 0.0165701, 1.86171, -7.41809, 0.15481, -1.57682)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece9" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(1.49917, 1.06123, 0.791369, -1.10823, 1.66005, -0.126708, -0.72409, -0.34353, 1.8324, -0.718149, -0.0505718, 8.18751)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece6" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(1.49689, 0.973692, -2.41065, -2.4745, 1.38695, -0.976332, 0.797599, 2.47554, 1.49517, -7.41809, 0.396597, -11.2004)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece7" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(0.760901, -0.635619, -2.83143, -2.4745, 1.38695, -0.976332, 1.51587, 2.58309, -0.172504, -3.86515, 0.179391, -16.4905)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece8" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(-1.87273, -3.52488, -0.260911, -3.29934, 1.84926, -1.30178, 1.26777, -0.394261, -3.77324, 4.28125, -0.0476865, -17.5486)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece5" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(1.69841, 2.46037, -0.248918, -2.38615, 1.55119, -0.94875, -0.649387, 0.735109, 2.83512, -14.2936, 0.0823048, -1.02387)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null
+
+[node name="SteelPiece4" parent="." instance=ExtResource("16_p7nyv")]
+transform = Transform3D(0.519833, 1.11822, 1.5746, -1.34142, 1.38217, -0.538714, -1.38938, -0.916074, 1.10925, -7.41809, 0.15481, -4.63032)
+skeleton = NodePath("../../..")
+surface_material_override/0 = null

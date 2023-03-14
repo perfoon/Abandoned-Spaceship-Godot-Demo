@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cnnemxdoblqc7"]
+
+[ext_resource type="Texture2D" uid="uid://fapq3d468576" path="res://Materials/Vegetation/Vegetation_Albedo.png" id="1_3ulw0"]
+[ext_resource type="Texture2D" uid="uid://b6yvlrxhuubgr" path="res://Materials/Vegetation/Vegetation_Roughness.png" id="2_oytq6"]
+[ext_resource type="Texture2D" uid="uid://bhhsvv8y7wyk3" path="res://Materials/Vegetation/Vegetation_Normal.png" id="2_y81oq"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+specular_mode = 2
+albedo_color = Color(1, 0.996078, 0.788235, 1)
+albedo_texture = ExtResource("1_3ulw0")
+roughness_texture = ExtResource("2_oytq6")
+normal_enabled = true
+normal_texture = ExtResource("2_y81oq")
+heightmap_scale = 10.366
+subsurf_scatter_strength = 1.0
+backlight_enabled = true
+backlight = Color(1, 0.921569, 0.262745, 1)
+distance_fade_max_distance = 33.47

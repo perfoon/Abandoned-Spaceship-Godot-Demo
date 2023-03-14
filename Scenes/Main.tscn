@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://p06gf2xc2cc"]
+
+[ext_resource type="PackedScene" uid="uid://b11dhc2mlx4d4" path="res://Scenes/Hangar.tscn" id="1_q2wk0"]
+[ext_resource type="PackedScene" uid="uid://bx4608scjynpg" path="res://Scenes/Outside.tscn" id="2_ynrhl"]
+[ext_resource type="Environment" uid="uid://3mjh4eonnhh3" path="res://Scenes/Environment/environment.tres" id="3_cdcts"]
+[ext_resource type="PackedScene" uid="uid://bplxirpbbh5ck" path="res://Scenes/Controllers/FPSCharacter.tscn" id="5_6wse5"]
+[ext_resource type="PackedScene" uid="uid://b1wrv31em1a0m" path="res://Scenes/MenuLayer.tscn" id="5_nnn85"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Hangar" parent="." instance=ExtResource("1_q2wk0")]
+
+[node name="Outside" parent="." instance=ExtResource("2_ynrhl")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("3_cdcts")
+
+[node name="MenuLayer" parent="." instance=ExtResource("5_nnn85")]
+
+[node name="FPSCharacter" parent="." instance=ExtResource("5_6wse5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.39674)

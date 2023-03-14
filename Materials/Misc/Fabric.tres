@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cl5pyun5ckhr2"]
+
+[ext_resource type="Texture2D" uid="uid://d4g5wefji8pw2" path="res://Materials/Misc/Fabric_Albedo.png" id="1_uitr1"]
+[ext_resource type="Texture2D" uid="uid://dbpv28pw8xbew" path="res://Materials/Misc/Fabric_Roughness.png" id="2_i74hd"]
+[ext_resource type="Texture2D" uid="uid://cn0j6aq5q2mj5" path="res://Materials/Misc/Fabric_Normal.png" id="3_ycuyb"]
+
+[resource]
+cull_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_uitr1")
+roughness_texture = ExtResource("2_i74hd")
+normal_enabled = true
+normal_texture = ExtResource("3_ycuyb")
+subsurf_scatter_strength = 1.0
+backlight = Color(0.898039, 0.858824, 0.152941, 1)
+backlight_texture = ExtResource("2_i74hd")
+distance_fade_max_distance = 33.47
