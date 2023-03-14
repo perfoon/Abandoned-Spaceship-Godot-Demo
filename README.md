@@ -11,7 +11,7 @@ Godot 4 demo scene of an abandoned spaceship in an overgrown hangar.
 
 ![Screenshot](Screenshots/Screenshot3.jpg)
 
-##Features
+## Features
 1. Shows the light baking setup in Godot. Lightmaps are baked for Hangar and Outside scene separately.
 2. Has trim sheet based materials with custom shader for color changing.
 3. Has vertex color based terrain material for blending between different ground textures.
