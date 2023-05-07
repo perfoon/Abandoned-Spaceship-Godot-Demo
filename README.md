@@ -7,7 +7,7 @@ Godot 4 demo scene of an abandoned spaceship in an overgrown hangar.
 1. Download the project
 2. Open the project.godot with Godot 4.0
 3. Run the Main.scene (default scene)
-4. WASD to move, hold SHFIT for sprinting, ESC to open menu
+4. WASD to move, hold SHIFT for sprinting, ESC to open menu
 
 ![Screenshot](Screenshots/Screenshot3.jpg)
 
