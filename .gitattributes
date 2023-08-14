@@ -1,5 +1,7 @@
-# Exclude files not needed for AssetLib users.
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
 
+# Exclude files not needed for AssetLib users.
 /.gitattributes        export-ignore
 /.gitignore            export-ignore
 /Screenshots           export-ignore
